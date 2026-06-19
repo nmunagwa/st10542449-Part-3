@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse upcoming events in Durban — RSVP and get tickets.">
+    <title>Durban Connect | Events</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="index.html" class="brand">
+                <img src="images/logo.png" alt="Durban Connect logo" class="brand-logo">
+                <span class="brand-text">
+                    <span class="brand-name">Durban Connect</span>
+                    <span class="brand-tag">Where the vibe is at</span>
+                </span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="site-nav" id="siteNav">
+                <ul>
+                   <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="submit.html" class="nav-cta">Submit Event</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="reveal">
+            <span class="eyebrow">What's on</span>
+            <h1>Upcoming Events</h1>
+
+            <div class="events-toolbar">
+                <div class="search-field">
+                    <input type="text" id="eventSearch" placeholder="Search events by name…" aria-label="Search events">
+                </div>
+                <div class="filter-pills" role="group" aria-label="Filter by category">
+                    <button class="filter-pill" data-category="All" aria-pressed="true">All</button>
+                    <button class="filter-pill" data-category="Nightlife" aria-pressed="false">Nightlife</button>
+                    <button class="filter-pill" data-category="Festival" aria-pressed="false">Festival</button>
+                    <button class="filter-pill" data-category="Music" aria-pressed="false">Music</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="events-grid reveal">
+
+            <article class="event-card" data-category="Nightlife">
+                <div class="event-media">
+                    <img src="images/WFC.jpg" alt="Crowd at The Midnight overnight festival">
+                    <span class="event-badge">Nightlife</span>
+                </div>
+                <div class="event-body">
+                    <h2>The Midnight</h2>
+                    <p>An electrifying overnight experience where top DJs and live bands light up the stage under the stars.</p>
+                    <ul class="event-meta">
+                        <li><strong>Time:</strong>20:00 – 02:00</li>
+                        <li><strong>Location:</strong>Durban ICC, Inkosi Albert Luthuli Complex, 45 Bram Fischer Rd, Durban 4001</li>
+                    </ul>
+                </div>
+                <div class="ticket-perf"></div>
+                <div class="event-footer">
+                    <button class="rsvp-btn" data-going="false">RSVP</button>
+                    <button class="tickets-btn">Buy Tickets</button>
+                </div>
+            </article>
+
+            <article class="event-card" data-category="Festival">
+                <div class="event-media">
+                    <img src="images/carnival.jpg" alt="Rides and lights at Carnival of Curiosities">
+                    <span class="event-badge">Festival</span>
+                </div>
+                <div class="event-body">
+                    <h2>Carnival of Curiosities</h2>
+                    <span class="event-tag">Limited tickets</span>
+                    <p>A day of excitement and fun at our Annual Fun Fair! Join us for thrilling rides, delicious food, games, and live entertainment that will make memories for the whole family.</p>
+                    <ul class="event-meta">
+                        <li><strong>Time:</strong>18:00 – 00:00</li>
+                        <li><strong>Location:</strong>Spireside, Phoenix, 4001, Durban</li>
+                    </ul>
+                </div>
+                <div class="ticket-perf"></div>
+                <div class="event-footer">
+                    <button class="rsvp-btn" data-going="false">RSVP</button>
+                    <button class="tickets-btn">Buy Tickets</button>
+                </div>
+            </article>
+
+            <article class="event-card" data-category="Music">
+                <div class="event-media">
+                    <img src="images/music festival.jpg" alt="live music performance at Echo Wave Music Festival">
+                    <span class="event-badge">Music</span>
+                </div>
+                <div class="event-body">
+                    <h2>Echo Wave Music Festival</h2>
+                    <span class="event-tag">Limited tickets</span>
+                    <p>Experience the magic of live music at our Jazz Music Festival! Immerse yourself in soulful performances, smooth rhythms, and the unique sounds of talented jazz musicians.</p>
+                    <ul class="event-meta">
+                        <li><strong>Time:</strong>14:00 – 18:00</li>
+                        <li><strong>Location:</strong>Durban ICC, Inkosi Albert Luthuli Complex, 45 Bram Fischer Rd, Durban 4001</li>
+                    </ul>
+                </div>
+                <div class="ticket-perf"></div>
+                <div class="event-footer">
+                    <button class="rsvp-btn" data-going="false">RSVP</button>
+                    <button class="tickets-btn">Buy Tickets</button>
+                </div>
+            </article>
+
+            <article class="event-card" data-category="Music">
+                <div class="event-media">
+                    <img src="images/baby competition.jpg" alt="competitors performing at the talent competition">
+                    <span class="event-badge">Music</span>
+                </div>
+                <div class="event-body">
+                    <h2>Talent Competition</h2>
+                    <span class="event-tag">Limited tickets</span>
+                    <p>Showcase your skills and compete against the best! Join us for an exciting talent competition filled with creativity and passion.</p>
+                    <ul class="event-meta">
+                        <li><strong>Time:</strong>14:00 – 18:00</li>
+                        <li><strong>Location:</strong>Durban ICC, Inkosi Albert Luthuli Complex, 45 Bram Fischer Rd, Durban 4001</li>
+                    </ul>
+                </div>
+                <div class="ticket-perf"></div>
+                <div class="event-footer">
+                    <button class="rsvp-btn" data-going="false">RSVP</button>
+                    <button class="tickets-btn">Buy Tickets</button>
+                </div>
+            </article>
+
+            <article class="event-card" data-category="Music">
+                <div class="event-media">
+                    <img src="images/music.jpg" alt="Live music performance">
+                    <span class="event-badge">Music</span>
+                </div>
+                <div class="event-body">
+                    <h2>Live Music Performance</h2>
+                    <span class="event-tag">Limited tickets</span>
+                    <p>Enjoy captivating melodies,vibrant energies and a lovely atmospher perfect for music lovers and friends alike, 
+                        Experience the magic of live enter and create lasting memeories.</p>
+                    <ul class="event-meta">
+                        <li><strong>Time:</strong>14:00 – 18:00</li>
+                        <li><strong>Location:</strong>Durban ICC, Inkosi Albert Luthuli Complex, 45 Bram Fischer Rd, Durban 4001</li>
+                    </ul>
+                </div>
+                <div class="ticket-perf"></div>
+                <div class="event-footer">
+                    <button class="rsvp-btn" data-going="false">RSVP</button>
+                    <button class="tickets-btn">Buy Tickets</button>
+                </div>
+            </article>
+
+            <article class="event-card" data-category="Music">
+                <div class="event-media">
+                   <img src="images/Dance.jpg" alt="dance the nightaway and feel young again">
+                    <span class="event-badge">Music</span>
+                </div>
+                <div class="event-body">
+                    <h2> Old age dance night</h2>
+                    <span class="event-tag">Limited tickets</span>
+                    <p>Celebrate the joy of movement,music, and companionship at our old Age Dance night. Enjoy a a relaxed atmosphere
+                        where classic tunes bring people together. Perfect for seniors looking to social and have fun.</p>
+                    <ul class="event-meta">
+                        <li><strong>Time:</strong>14:00 – 18:00</li>
+                        <li><strong>Location:</strong>Durban ICC, Inkosi Albert Luthuli Complex, 45 Bram Fischer Rd, Durban 4001</li>
+                    </ul>
+                </div>
+                <div class="ticket-perf"></div>
+                <div class="event-footer">
+                    <button class="rsvp-btn" data-going="false">RSVP</button>
+                    <button class="tickets-btn">Buy Tickets</button>
+                </div>
+            </article>
+
+            <article class="event-card" data-category="Music">
+                <div class="event-media">
+                    <img src="images/fun.jpg" alt="dine with friends listening to amazing live instrumental music">
+                    <span class="event-badge">Music</span>
+                </div>
+                <div class="event-body">
+                    <h2>Live Music while dining</h2>
+                    <span class="event-tag">Limited tickets</span>
+                    <p>Join us for a night of dining and fun music! Experience the joy of movement and music.</p>
+                    <ul class="event-meta">
+                        <li><strong>Time:</strong>14:00 – 18:00</li>
+                        <li><strong>Location:</strong>Durban ICC, Inkosi Albert Luthuli Complex, 45 Bram Fischer Rd, Durban 4001</li>
+                    </ul>
+                </div>
+                <div class="ticket-perf"></div>
+                <div class="event-footer">
+                    <button class="rsvp-btn" data-going="false">RSVP</button>
+                    <button class="tickets-btn">Buy Tickets</button>
+                </div>
+            </article>
+
+        </section>
+
+        <p class="no-results" id="noResults">No events match your search — try a different name or category.</p>
+    </main>
+
+    <footer class="site-footer">
+        <svg class="wave-divider" viewBox="0 0 1200 60" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M0,30 C300,70 900,-10 1200,30 L1200,60 L0,60 Z"></path>
+        </svg>
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <span class="brand-name">Durban Connect</span>
+                <p>Where the vibe is at</p>
+            </div>
+            <div class="footer-info">
+                <h2>For more info</h2>
+                <p>Call: <a href="tel:0613205452">061 320 5452</a></p>
+                <p>Email: <a href="mailto:durbanconnect@gmail.com">durbanconnect@gmail.com</a></p>
+            </div>
+        </div>
+        <p class="footer-bottom">All rights reserved <span id="year">2026</span> Durban Connect &copy;</p>
+    </footer>
+
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
